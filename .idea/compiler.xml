@@ -11,10 +11,10 @@
         <module name="initial" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="calculator" target="1.8" />
-      <module name="complete" target="1.5" />
-      <module name="initial" target="1.5" />
+      <module name="complete" target="8" />
+      <module name="initial" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
