@@ -1,14 +1,22 @@
-package com.cognizant.calculator.phase01;
+package com.cognizant.calculator.phase02;
+
+import java.util.Scanner;
 
 /**
- * Basic calculator functionality
+ * Adding user input
  */
 public class CalcMain {
 
     public static void main(String[] args) {
 
-        double num1 = 27, num2 = 12;
-        double result;
+        // declare and instantiate Scanner
+
+        // declare all variables
+        double num1 = 0.0, num2 = 0.0, result;
+
+        // prompt for first number
+
+        // prompt for second number
 
         // add
         result = num1 + num2;
@@ -25,6 +33,9 @@ public class CalcMain {
         // divide
         result = num1 / num2;
         System.out.println(num1 + " / " + num2 + " = " + result);
+
+        // close scanner
+
     }
 
 }

@@ -1,5 +1,8 @@
 package com.cognizant.calculator.phase01;
 
+/**
+ * Basic calculator functionality
+ */
 public class CalcMain {
 
     public static void main(String[] args) {
