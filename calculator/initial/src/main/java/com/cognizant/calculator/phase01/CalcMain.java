@@ -15,10 +15,13 @@ public class CalcMain {
         System.out.println(num1 + " + " + num2 + " = " + result);
 
         // subtract
+        // TODO implement subtraction
 
         // multiply
+        // TODO implement multiplication
 
         // divide
+        // TODO implement division
 
     }
 

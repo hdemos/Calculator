@@ -26,11 +26,10 @@ public class CalcMain {
         num2 = scanner.nextDouble();
 
         // prompt for the operation
-        System.out.print("Operation(+, -, *, /): ");
-
+        // TODO implement prompt
 
         // use switch to do calculation
-
+        // TODO implement using switch to determine which operation has been chosen
 
         // display results
         if (valid) {
