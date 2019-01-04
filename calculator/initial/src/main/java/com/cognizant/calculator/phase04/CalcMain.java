@@ -3,7 +3,7 @@ package com.cognizant.calculator.phase04;
 import java.util.Scanner;
 
 /**
- * Adding menu
+ * Add a menu to the calculator.  Use a StringBuilder to create a menu.
  */
 public class CalcMain {
 
@@ -15,8 +15,8 @@ public class CalcMain {
         // declare all variables
         double num1, num2, result = 0;
         boolean valid = true;
-        int choice;
-        String operation = "";
+        int menuChoice;
+        String operator = "";
 
         // prompt for first number
         System.out.print("Number 1: ");
@@ -30,7 +30,7 @@ public class CalcMain {
         do {
             // reset flag
             valid = true;
-            operation = "";
+            operator = "";
 
             // build menu
             StringBuilder builder = new StringBuilder();
@@ -38,9 +38,9 @@ public class CalcMain {
 
             // display menu and prompt
             System.out.print(builder);
-            choice = scanner.nextInt();
+            menuChoice = scanner.nextInt();
 
-            switch (choice) {
+            switch (menuChoice) {
 
                 case 1: // TODO implement getting new numbers
                     // prompt for first number
@@ -77,16 +77,16 @@ public class CalcMain {
 
                 default:
                     // invalid operation - let the user know!
-                    System.out.println("Invalid operation [" + operation + "].");
+                    System.out.println("Invalid operation [" + operator + "].");
                     valid = false;
             }
 
             // display results
             if (valid) {
-                System.out.println(num1 + " " + operation + " " + num2 + " = " + result);
+                System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
             }
 
-        } while (choice != 6);
+        } while (menuChoice != 6);
 
         // close scanner and exit
         System.out.println("Good-bye!");

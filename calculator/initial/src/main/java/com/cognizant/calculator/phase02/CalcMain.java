@@ -3,7 +3,7 @@ package com.cognizant.calculator.phase02;
 import java.util.Scanner;
 
 /**
- * Adding user input
+ * Add user input using a Scanner.
  */
 public class CalcMain {
 

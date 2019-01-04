@@ -1,9 +1,9 @@
-package com.cognizant.calculator.phase04;
+package com.cognizant.calculator.phase07;
 
 import java.util.Scanner;
 
 /**
- * Add a menu to the calculator.  Use a StringBuilder to create a menu.
+ * Modify Calculator class to be a POJO instead of a utility class.  Use code in this class as a guide.
  */
 public class CalcMain {
 
@@ -11,6 +11,9 @@ public class CalcMain {
 
         // declare and instantiate Scanner
         Scanner scanner = new Scanner(System.in);
+
+        // declare and instantiate Calculator
+        Calculator calc = new Calculator();
 
         // declare all variables
         double num1, num2, result = 0;
@@ -25,6 +28,9 @@ public class CalcMain {
         // prompt for second number
         System.out.print("Number 2: ");
         num2 = scanner.nextDouble();
+
+        // add operands to the calculator
+        calc.setOperands(num1, num2);
 
        // use do-while to loop and prompt
         do {
@@ -60,23 +66,23 @@ public class CalcMain {
                     break;
 
                 case 2:
-                    result = num1 + num2;
+                    result = calc.add();
                     operator = "+";
                     break;
 
                 case 3:
-                    result = num1 - num2;
+                    result = calc.subtract();
                     operator = "-";
                     break;
 
                 case 4:
-                    result = num1 * num2;
+                    result = calc.multiply();
                     operator = "*";
                     break;
 
                 case 5:
                     if (num2 != 0.0) {
-                        result = num1 / num2;
+                        result = calc.divide();
                         operator = "/";
                     } else {
                         System.out.println("Cannot divide by zero.");

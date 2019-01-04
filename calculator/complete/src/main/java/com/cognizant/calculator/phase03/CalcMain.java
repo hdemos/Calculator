@@ -3,7 +3,7 @@ package com.cognizant.calculator.phase03;
 import java.util.Scanner;
 
 /**
- * Adding operation selection
+ * Add operation selection functionality.
  */
 public class CalcMain {
 

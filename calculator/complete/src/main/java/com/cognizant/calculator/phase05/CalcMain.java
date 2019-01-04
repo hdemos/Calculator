@@ -1,11 +1,27 @@
-package com.cognizant.calculator.phase04;
+package com.cognizant.calculator.phase05;
 
 import java.util.Scanner;
 
 /**
- * Add a menu to the calculator.  Use a StringBuilder to create a menu.
+ * Extract functionality into separate methods.
  */
 public class CalcMain {
+
+    public static double add(double a, double b) {
+        return a + b;
+    }
+
+    public static double subtract(double a, double b) {
+        return a - b;
+    }
+
+    public static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    public static double divide(double a, double b) {
+        return a / b;
+    }
 
     public static void main(String[] args) {
 
@@ -60,23 +76,23 @@ public class CalcMain {
                     break;
 
                 case 2:
-                    result = num1 + num2;
+                    result = add(num1, num2);
                     operator = "+";
                     break;
 
                 case 3:
-                    result = num1 - num2;
+                    result = subtract(num1, num2);
                     operator = "-";
                     break;
 
                 case 4:
-                    result = num1 * num2;
+                    result = multiply(num1, num2);
                     operator = "*";
                     break;
 
                 case 5:
                     if (num2 != 0.0) {
-                        result = num1 / num2;
+                        result = divide(num1, num2);
                         operator = "/";
                     } else {
                         System.out.println("Cannot divide by zero.");
