@@ -26,7 +26,7 @@ public class CalcMain {
         System.out.print("Number 2: ");
         num2 = scanner.nextDouble();
 
-       // use do-while to loop and prompt
+        // use do-while to loop and prompt
         do {
             // reset flag
             valid = true;

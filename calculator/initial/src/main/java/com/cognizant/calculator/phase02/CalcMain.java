@@ -1,7 +1,5 @@
 package com.cognizant.calculator.phase02;
 
-import java.util.Scanner;
-
 /**
  * Add user input using a Scanner.
  */

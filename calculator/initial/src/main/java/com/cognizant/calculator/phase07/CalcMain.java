@@ -32,7 +32,7 @@ public class CalcMain {
         // add operands to the calculator
         // TODO calc.setOperands(num1, num2);
 
-       // use do-while to loop and prompt
+        // use do-while to loop and prompt
         do {
             // reset flag
             valid = true;
